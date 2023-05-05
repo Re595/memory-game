@@ -23,7 +23,7 @@ const httpLink = new HttpLink({
   uri: `https://memory-game-test.onrender.com/api/gql/`, 
 })
 const wsLink = new GraphQLWsLink(createClient({
-  url: `ws:///memory-game-test.onrender.com/api/gql`,
+  url: `ws://memory-game-test.onrender.com/api/gql`,
 })); 
 
 const splitLink = split(
