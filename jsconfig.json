@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "baseUrl": "./",
+        "checkJs": true,
+        "module": "ES2022",
+        "jsx": "preserve", 
+        "moduleResolution":"nodenext"
+    }, 
+    "exclude": ["node_modules", "**/node_modules/*"]
+}
