@@ -20,10 +20,10 @@ const HOSTNAME = process.env.HOSTNAME || "https://memory-game-test.onrender.com"
 const PORT = process.env.PORT || 4000; 
 
 const httpLink = new HttpLink({
-  uri: `${HOSTNAME}/api/gql/`, 
+  uri: `https://memory-game-test.onrender.com/api/gql/`, 
 })
 const wsLink = new GraphQLWsLink(createClient({
-  url: `ws://${HOSTNAME.replace('http://', '').replace('https://','')}/api/gql`,
+  url: `ws:///memory-game-test.onrender.com/api/gql`,
 })); 
 
 const splitLink = split(
