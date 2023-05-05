@@ -206,7 +206,6 @@ const resolvers = {
     Subscription:{
         roomUpdated: {
             subscribe : /* (() => pubsub.asyncIterator('ROOM_UPDATED')) */ withFilter(() => pubsub.asyncIterator('ROOM_UPDATED'), (payload, variables) => {
-                console.log("payload: ", payload); 
                 return (payload.roomUpdated.id === variables.idRoom)
             }) 
         } 
