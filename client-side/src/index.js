@@ -15,7 +15,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { GraphQLWsLink } from '@apollo/client/link/subscriptions';
 import { createClient } from 'graphql-ws';
 
-const HOSTNAME = process.env.HOSTNAME || "http://localhost"; 
+const HOSTNAME = process.env.HOSTNAME || "https://memory-game-test.onrender.com"; 
 
 const PORT = process.env.PORT || 4000; 
 
